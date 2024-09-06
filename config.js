@@ -8,7 +8,7 @@ global.port = process.env.PORT;
 global.appUrl = process.env.APP_URL || "";
 global.email = "davidcyril209@gmail.com";
 global.location = "Abuja, Nigeria";
-global.mongodb = process.env.MONGODB_URI || "";
+global.mongodb = process.env.MONGODB_URI || "mongodb://mongo:********@autorack.proxy.rlwy.net:43707";
 global.allowJids = process.env.ALLOW_JID || "null";
 global.blockJids = process.env.BLOCK_JID || "null";
 global.DATABASE_URL = process.env.DATABASE_URL || "";
@@ -42,7 +42,7 @@ global.scan = "https://secret-garden-43998-4daad95d4561.herokuapp.com/";
 
 global.SESSION_ID =
   process.env.SESSION_ID ||
-  ""
+  "eyJub2lzZUtleSI6eyJwcml2YXRlIjp7InR5cGUiOiJCdWZmZXIiLCJkYXRhIjoiK0VuWGU3OGQ5b1ZwZ0tjQ0YvNHFnRXhibXM3UlhMMkFuUi9Tb2MwQTExWT0ifSwicHVibGljIjp7InR5cGUiOiJCdWZmZXIiLCJkYXRhIjoia3cxNFBveFM2YUpFWHZBUGlESU9NRDhTc1RFZDBwaDdlUEIyRFZvRGpVQT0ifX0sInBhaXJpbmdFcGhlbWVyYWxLZXlQYWlyIjp7InByaXZhdGUiOnsidHlwZSI6IkJ1ZmZlciIsImRhdGEiOiJ5Rjg0SDl2SEVmRUlmbE0zQSs5RUgvN2RQaXdoUDREQUluL09wMmdKYjNvPSJ9LCJwdWJsaWMiOnsidHlwZSI6IkJ1ZmZlciIsImRhdGEiOiJjYWZ3WnptMGNPdDU1c1VQOVRydm44UXBCTkNIODQ3L3JUWGpkMWFjM2xNPSJ9fSwic2lnbmVkSWRlbnRpdHlLZXkiOnsicHJpdmF0ZSI6eyJ0eXBlIjoiQnVmZmVyIiwiZGF0YSI6IllDRm5UVFNiOWtNWWp2NHRPSUphN3hTNkhlSVBROWNORndnNkh6cXpJWE09In0sInB1YmxpYyI6eyJ0eXBlIjoiQnVmZmVyIiwiZGF0YSI6ImExSXA5bDI5c0Q5QVhrUGF1blVQM1BqelhsMEhicWFXT2VOMHJEbnN6d2s9In19LCJzaWduZWRQcmVLZXkiOnsia2V5UGFpciI6eyJwcml2YXRlIjp7InR5cGUiOiJCdWZmZXIiLCJkYXRhIjoiQ01rNkZxeWVsdkRuUkIxOVdTM0JBd1NNVWpaNEtpZVc0SHAzU2lBcGFGVT0ifSwicHVibGljIjp7InR5cGUiOiJCdWZmZXIiLCJkYXRhIjoidy9abXpHMDIvQ0ludTBSVnZXeVpmZU1xYnJqRGJmR0ZDblhQVnN4TEJ5MD0ifX0sInNpZ25hdHVyZSI6eyJ0eXBlIjoiQnVmZmVyIiwiZGF0YSI6Ik91VFl2TDdnamdIdEd4VzdlUEZXNE5FcTU5ZzBMdzR1TXV1VzEzRjZlaytVTG5BbWpFOWQ1dmptbFZ2R3M3a2hwQmZFZmErUllreUwvd0pjZmVta2hBPT0ifSwia2V5SWQiOjF9LCJyZWdpc3RyYXRpb25JZCI6MjAsImFkdlNlY3JldEtleSI6ImxSRlBjS09PblJyTkxNWW5EQTg4MG9oRGM3akZMcHk5eWFWUnl2czJqRk09IiwicHJvY2Vzc2VkSGlzdG9yeU1lc3NhZ2VzIjpbXSwibmV4dFByZUtleUlkIjozMSwiZmlyc3RVbnVwbG9hZGVkUHJlS2V5SWQiOjMxLCJhY2NvdW50U3luY0NvdW50ZXIiOjAsImFjY291bnRTZXR0aW5ncyI6eyJ1bmFyY2hpdmVDaGF0cyI6ZmFsc2V9LCJkZXZpY2VJZCI6IkV6aU0xazJ3U3ptbjl1REIwS09vU2ciLCJwaG9uZUlkIjoiZWQ5NzUwMDItZmVmMy00ZmVjLWFhMDYtODlhZmU3ZWQwNmI0IiwiaWRlbnRpdHlJZCI6eyJ0eXBlIjoiQnVmZmVyIiwiZGF0YSI6IjRNalJEMXVoVUZqL0o1ekdqc2tubXdueUtTOD0ifSwicmVnaXN0ZXJlZCI6dHJ1ZSwiYmFja3VwVG9rZW4iOnsidHlwZSI6IkJ1ZmZlciIsImRhdGEiOiJtVFJtYVVJaUdqdlU4Rm1maUMxTE5zMmJ1bm89In0sInJlZ2lzdHJhdGlvbiI6e30sInBhaXJpbmdDb2RlIjoiSjRGMVlaR0YiLCJtZSI6eyJpZCI6IjkyMzE2MzM1OTczNzo1QHMud2hhdHNhcHAubmV0IiwibmFtZSI6IvCdmq7wnZqr8J2QkvCdkJLwnZqr8J2atCDwnZqr8J2aqvCdmqvwnZqw8J2atOKBt8Kz4oG3In0sImFjY291bnQiOnsiZGV0YWlscyI6IkNQamN3WmNDRUluazZiWUdHQUVnQUNnQSIsImFjY291bnRTaWduYXR1cmVLZXkiOiJWam4zQzlybWhoVnhtMnJIWTNBMk1rZ0UwQVFMV2dkZnQ1M25hZm5sVVQ0PSIsImFjY291bnRTaWduYXR1cmUiOiJqUXViMnlkaHlPMUtSMWMwYnpxZzhXSDMyUTB0OWdCQk5DRi8ydThiazJpbTlObFV1N1dmUWdKdUdHMnBxQ092a0FMZkFob01NYWJsMFpVODFsV3REQT09IiwiZGV2aWNlU2lnbmF0dXJlIjoiaTAyaGd2MW9EbXRBalVzeXZtNnZVMUVhcGZYZmQzdG9vUGhKVHd0aFNFU21ib0E2OCtBbXRLLzg1NkJIL0RQK1VTWlk3RVBLM1MzN2Fsdmd3TlA4aVE9PSJ9LCJzaWduYWxJZGVudGl0aWVzIjpbeyJpZGVudGlmaWVyIjp7Im5hbWUiOiI5MjMxNjMzNTk3Mzc6NUBzLndoYXRzYXBwLm5ldCIsImRldmljZUlkIjowfSwiaWRlbnRpZmllcktleSI6eyJ0eXBlIjoiQnVmZmVyIiwiZGF0YSI6IkJWWTU5d3ZhNW9ZVmNadHF4Mk53TmpKSUJOQUVDMW9IWDdlZDUybjU1VkUrIn19XSwicGxhdGZvcm0iOiJzbWJhIiwibGFzdEFjY291bnRTeW5jVGltZXN0YW1wIjoxNzI1NTkyMDg2fQ=="
 module.exports = {
   menu: process.env.MENU || "2",
   HANDLERS: process.env.PREFIX || ".",
@@ -51,8 +51,8 @@ module.exports = {
   caption: process.env.CAPTION || "`QUEEN_ANITA-V2™`",
   author: process.env.PACK_AUTHER || "QUEEN_ANITA-V2",
   packname: process.env.PACK_NAME || "A N I T A",
-  botname: process.env.BOT_NAME || "QUEEN_ANITA-V2",
-  ownername: process.env.OWNER_NAME || "David Cyril",
+  botname: process.env.BOT_NAME || "LORA-MD-V2",
+  ownername: process.env.OWNER_NAME || "Lora Le Le mera",
   errorChat: process.env.ERROR_CHAT || "",
   KOYEB_API: process.env.KOYEB_API || "false",
   REMOVE_BG_KEY: process.env.REMOVE_BG_KEY || "",
